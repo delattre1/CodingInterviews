@@ -1,0 +1,42 @@
+Problem
+Problem 3.5 - Cracking the Coding Interview
+
+Write a program to sort a stack such that the smallest items are on the top. The stack supports the following operations: push, pop, peek, and is_empty.
+
+Constraints
+You may not copy the elements into any other data structure (such as an array);
+You can use an additional temporary stack, but not two.
+Hints
+One way of sorting an array is to iterate through the array and insert each element into a new array in sorted order. Can you do this with a stack?
+Imagine your secondary stack is sorted. Can you insert elements into it in sorted order? You might need some extra storage. What could you use for extra storage?
+Keep the secondary stack in sorted order, with the biggest elements on the top. Use the primary stack for additional storage.
+Solution
+One approach is to implement a rudimentary sorting algorithm. We search through the entire stack to find the minimum element and then push that onto a new stack. Then, we find the new minimum element and push that. This will actually require a total of three stacks: s1 is the original stack, s2 is the final sorted stack, and s3 acts as a buffer during our searching of s1. To search s1 for each minimum, we need to pop elements from s1 and push them onto the buffer, s3.
+
+Unfortunately, this requires two additional stacks, and we can only use one. Can we do better? Yes.
+
+Rather than searching for the minimum repeatedly, we can sort s1 by inserting each element from s1 in order into s2. How would this work?
+
+Imagine we have the following stacks, where s2 is "sorted" and s1 is not:
+
+s1 [ , 5, 10, 7]
+s2 [12, 8, 3, 1]
+
+When we pop 5 from s1, we need to find the right place in s2 to insert this number. In this case, the correct place is on s2 just above 3. We can get it there by popping 5 from s1 and holding it in a temporary variable. Then, we move 12 and 8 over to s1 (by popping them from s2 and pushing them onto s1) and then push 5 onto s2.
+
+Step 1: 
+	s1 = [ , , 10, 7]
+	s2 = [12, 8, 3, 1]
+	temp = 5
+Step 2:
+	s1 = [8, 12, 10, 7]
+	s2 = [ ,  , 3, 1]
+	temp = 5
+
+Step 3:
+	s1 = [8, 12, 10, 7]
+	s2 = [ ,  5, 3, 1]
+	temp = --
+
+Note that 8 and 12 are still in s1 -- and that's okay! We just repeat the same steps for those two numbers as we did for 5, each time popping off the top of sl and putting it into the "right place" on 52. (Of course, since 8 and 12 were moved from s2 to s1 precisely because they were larger than 5, the "right place" for these elements will be right on top of 5. We won't need to muck around with s2's other elements, and the inside of the below while loop will not be run when tmp is 8 or 12).
+
