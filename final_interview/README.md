@@ -53,6 +53,7 @@ And the ciphertext would be:
 
 # Hints
 1. What if you knew the number of columns of the rectangle?
+2. How can you make sure that the input would contain only alfa-numeric characters?
 
 # Solution
 
