@@ -55,15 +55,14 @@ And the ciphertext would be:
 Could be represented as:
 
 ```text
-"abc"
-"123"
-"def"
-"g"
+"abc1"
+"23de"
+"df"
 ```
 
 And the ciphertext would be:
 ```text
-"a1dgb2ec3f"
+"a2db3fcd1e"
 ```
 
 # Hints
