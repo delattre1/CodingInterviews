@@ -7,7 +7,15 @@ Given a text, output the encoded version of that text.
 
 To cipher a text using the square code you need to stack the text in the form of a rectangle and then read the columns as if it were the rows.
 
-### Examples
+# Additional information
+1. Uppercase and lowercase letters must be considered different;
+2. Strings may contain any valid character.
+3. The plaintext should be organized in to a rectangle.  The size of the
+rectangle (`r x c`) should be decided by the length of the message,
+such that `c >= r` and `c - r <= 1`, where `c` is the number of columns
+and `r` is the number of rows.
+
+# Examples
 
 1. The text:
 ```text
@@ -44,6 +52,7 @@ And the ciphertext would be:
 ```
 
 # Hints
+1. What if you knew the number of columns of the rectangle?
 
 # Solution
 
@@ -64,11 +73,6 @@ is normalized to:
 ```text
 "ifmanwasmeanttostayonthegroundgodwouldhavegivenusroots"
 ```
-
-The plaintext should be organized in to a rectangle.  The size of the
-rectangle (`r x c`) should be decided by the length of the message,
-such that `c >= r` and `c - r <= 1`, where `c` is the number of columns
-and `r` is the number of rows.
 
 Our normalized text is 54 characters long, dictating a rectangle with
 `c = 8` and `r = 7`:
