@@ -24,9 +24,8 @@ Given a text, output the encoded version of that text.
 To cipher a text using the square code you need to stack the text in the form of a rectangle and then read the columns as if it were the rows.
 
 # Additional information
-1. Uppercase and lowercase letters must be considered different;
-2. Strings may contain any valid character.
-3. The plaintext should be organized in to a rectangle.  The size of the
+1. Strings may contain any valid character.
+2. The plaintext should be organized in to a rectangle.  The size of the
 rectangle (`r x c`) should be decided by the length of the message,
 such that `c >= r` and `c - r <= 1`, where `c` is the number of columns
 and `r` is the number of rows.
@@ -56,15 +55,14 @@ And the ciphertext would be:
 Could be represented as:
 
 ```text
-"abc"
-"123"
-"def"
-"g"
+"abc1"
+"23de"
+"df"
 ```
 
 And the ciphertext would be:
 ```text
-"a1dgb2ec3f"
+"a2db3fcd1e"
 ```
 
 # Hints
