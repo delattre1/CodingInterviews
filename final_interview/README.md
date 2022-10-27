@@ -9,6 +9,7 @@
     <li><a href="#hints">Hints</a></li>
     <li><a href="#solution">Solution</a></li>
     <li><a href="#extra">Extra</a></li>
+    <li><a href="#complexity">Complexity</a></li>
     <li><a href="#acknowledgement">Acknowledgement</a></li>
   </ol>
 </details>
@@ -140,6 +141,12 @@ ciphertext back in to the original message:
 "aohghn "
 "sseoau "
 ```
+
+# Complexity
+
+Time complexity would be O(c²) (where c is the number of columns of the rectangle)
+Space complexity would be O(n) (where n is the size of input string)
+
 
 # Acknowledgement:
 
