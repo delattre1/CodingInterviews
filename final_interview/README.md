@@ -40,7 +40,7 @@ Could be represented as:
 
 And the ciphertext would be:
 ```text
-"a1dgb2ed3f"
+"a1dgb2ec3f"
 ```
 
 # Hints
