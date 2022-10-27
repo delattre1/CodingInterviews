@@ -38,7 +38,7 @@ Our normalized text is 54 characters long, dictating a rectangle with
 "groundgo"
 "dwouldha"
 "vegivenu"
-"sroots  "
+"sroots  
 ```
 
 The coded message is obtained by reading down the columns going left to
