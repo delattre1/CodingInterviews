@@ -1,5 +1,5 @@
 
-### Problem
+# Problem
 
 Implement the classic method for composing secret messages called a square code.
 
@@ -7,7 +7,7 @@ Given a text, output the encoded version of that text.
 
 To cipher a text using the square code you need to stack the text in the form of a rectangle and then read the columns as if it were the rows.
 
-For example,
+### Examples
 
 1. The text:
 ```text
@@ -118,6 +118,6 @@ ciphertext back in to the original message:
 
 
 
-### Acknowledgement:
+# Acknowledgement:
 
 This interview came from [codesubmit.io](https://codesubmit.io/)
