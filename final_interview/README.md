@@ -1,9 +1,51 @@
 
-### Brief
+### Problem
 
 Implement the classic method for composing secret messages called a square code.
 
 Given a text, output the encoded version of that text.
+
+To cipher a text using the square code you need to stack the text in the form of a rectangle and then read the columns as if it were the rows.
+
+For example,
+
+1. The text:
+```text
+"12345678"
+```
+Could be represented as:
+
+```text
+"123"
+"456"
+"78"
+```
+
+And the ciphertext would be:
+```text
+"14725836"
+```
+2. The text:
+```text
+"abc123defg"
+```
+Could be represented as:
+
+```text
+"abc"
+"123"
+"def"
+"g"
+```
+
+And the ciphertext would be:
+```text
+"a1dgb2ed3f"
+```
+
+# Hints
+
+# Solution
 
 First, the input is normalized: the spaces and punctuation are removed
 from the original text and the message is downcased.
@@ -74,13 +116,6 @@ ciphertext back in to the original message:
 ```
 
 
-### Evaluation Criteria
-
-- Python best practices
-- Show us your work through your commit history
-- Completeness: did you complete the features? Are all the tests running?
-- Correctness: does the functionality act in sensible, thought-out ways?
-- Maintainability: is it written in a clean, maintainable way?
 
 
 ### Acknowledgement:
