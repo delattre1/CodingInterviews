@@ -84,7 +84,7 @@ Our normalized text is 54 characters long, dictating a rectangle with
 "groundgo"
 "dwouldha"
 "vegivenu"
-"sroots  
+"sroots"
 ```
 
 The coded message is obtained by reading down the columns going left to
@@ -96,6 +96,7 @@ The message above is coded as:
 "imtgdvsfearwermayoogoanouuiontnnlvtwttddesaohghnsseoau"
 ```
 
+# Extra
 Output the encoded text in chunks that fill perfect rectangles `(r X c)`,
 with `c` chunks of `r` length, separated by spaces. For phrases that are
 `n` characters short of the perfect rectangle, pad each of the last `n`
@@ -118,9 +119,6 @@ ciphertext back in to the original message:
 "aohghn "
 "sseoau "
 ```
-
-
-
 
 # Acknowledgement:
 
