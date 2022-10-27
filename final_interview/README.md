@@ -144,8 +144,9 @@ ciphertext back in to the original message:
 
 # Complexity
 
-Time complexity would be O(c²) (where c is the number of columns of the rectangle)
-Space complexity would be O(n) (where n is the size of input string)
+- Time complexity would be O(c²) (where c is the number of columns of the rectangle)
+
+- Space complexity would be O(n) (where n is the size of input string)
 
 
 # Acknowledgement:
